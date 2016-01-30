@@ -1,5 +1,5 @@
 
-function areAnagrams(String s1, String s2)
+function areAnagrams(s1, s2)
 {
 	
 	return false;
