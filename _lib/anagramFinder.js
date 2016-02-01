@@ -39,9 +39,10 @@ function areAnagrams(s1, s2)
 		//Check the length of both strings
 		var i_s1Len = str_tempS1.length;
 		var i_s2Len = str_tempS2.length;
+		var i_inputLen = ((i_s1Len + i_s2Len) / 2);
 				
 		//Make sure both strings are same len, else break
-		if(i_s1Len == i_s2Len)
+		if((i_s1Len == i_s2Len) && (i_inputLen > 0))
 		{	
 		
 			//Convert input strings to arrays of chars
@@ -49,7 +50,7 @@ function areAnagrams(s1, s2)
 			var arr_s2Chars = str_tempS2.split('');
 			
 			//Set up comparison lengths
-			var i_inputLen = ((i_s1Len + i_s2Len) / 2);
+			
 			var i_matchCount = 0;
 		
 			//Nested loop through both arrays
