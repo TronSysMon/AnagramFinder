@@ -1,68 +1,80 @@
+<!--- Parker Baine | 29 Jan 2016 --->
 <!doctype html>
 <html>
-<head>
+	<head>
+		<title>AnagramFinder Demo - Parker Baine</title>
+		<meta charset="utf-8"> 
 
-	<title>AnagramFinder Alpha</title>
-	<meta charset="utf-8"> 
-	
-	<script src="_lib/jquery-1.12.0.min.js"></script>
-	<script src="_lib/anagramFinder.js"></script>
-	
-	<link rel="stylesheet" href="index.style.css">
-
-	<!--[if lt IE 9]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-</head>
-
-<body>
-<form>
-	<div class="wrapper">
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 		
+		<script src="_lib/jquery-1.12.0.min.js"></script>
+		<script src="_lib/anagramFinder.js"></script>
+		
+		<link rel="stylesheet" href="index.style.css">
 
-		<div class="content">
-			<header class="AF_header_main">
-				<!--- <h1>AnagramFinder</h1> --->
-				<img class="AF_header_main_img" src="_img/VintageEpcot03.png" />
-			</header>
-			
-			<div class="AF_div_main">
-				<div class="AF_div_main_container">
-					<div class="AF_div_main_container_left">
-						<section class="AF_section_main_container">
-							<h2>First Word:</h2>
-							<input type="text" name="s1" class="AF_textbox_main_container">
-						</section>
-						<section class="AF_section_main_container">
-							<h2>Second Word:</h2>
-							<input type="text" name="s2" class="AF_textbox_main_container">
-						</section>
-						<section class="AF_section_main_container">
-							<button type="button" class="AF_button_main_container" id="AF_button_main_container_compare">Compare</button>
-							<button type="button" class="AF_button_main_container" id="AF_button_main_container_reset">Reset</button>
+	</head>
+
+	<body>
+		<form>
+		
+			<!--- Outer page wrapper for space and alignment --->
+			<div class="wrapper">
+
+				<!--- 960 content area box --->
+				<div class="content">
+				
+					<!--- Header with graphic --->
+					<header class="AF_header_main">
+						<img class="AF_header_main_img" src="_img/VintageEpcot03.png" />
+					</header>
+
+					<!--- Main content container box --->
+					<div class="AF_div_main">
+						<div class="AF_div_main_container">
+						
+							<!--- Left side input box --->
+							<div class="AF_div_main_container_left">
+								<section class="AF_section_main_container">
+									<h2>First Phrase:</h2>
+									<input type="text" name="s1" class="AF_textbox_main_container" id="AF_textbox_main_container_s1">
+								</section>
+								<section class="AF_section_main_container">
+									<h2>Second Phrase:</h2>
+									<input type="text" name="s2" class="AF_textbox_main_container" id="AF_textbox_main_container_s2">
+								</section>
+								<section class="AF_section_main_container">
+									<button type="button" class="AF_button_main_container" id="AF_button_main_container_compare">Compare</button>
+									<button type="button" class="AF_button_main_container" id="AF_button_main_container_reset">Reset</button>
+								</section>
+							</div>
 							
-						</section>
+							<!--- Right side output box --->
+							<div class="AF_div_main_container_right">
+								<section class="AF_section_main_container">
+									<h2>Results:</h2>
+									<div class="AF_div_main_container_right_results">
+										<p>...</p>
+									</div>
+								</section>
+							</div>
+							
+						</div>
 					</div>
 					
-					<div class="AF_div_main_container_right">
-						<section class="AF_section_main_container">
-							<h2>Results:</h2>
-							<div class="AF_div_main_container_right_results">
-								<p>...</p>
-							</div>
-						</section>
-					</div>					
+					<!--- Footer with graphic --->
+					<footer class="AF_footer_main">
+						<img class="AF_header_main_img" src="_img/VintageEpcot03.png" />	
+					</footer>
+					
 				</div>
+	
 			</div>
-			
-			<footer class="AF_footer_main">
-				<img class="AF_header_main_img" src="_img/VintageEpcot03.png" />	
-			</footer>
-		</div>
-
+		</form>
 		
-	</div>
-</form>
-  <script src="index.script.js"></script>
-</body>
+		<!--- Run/Load the scripts --->
+		<script src="index.script.js"></script>
+		
+	</body>
 </html>
