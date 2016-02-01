@@ -4,7 +4,7 @@ $(document).ready(function(){
    
    if(!areAnagrams("Yes","No"))
    {
-	   alert("Hello World!");
+	   //alert("Hello World!");
    }
 
 });
